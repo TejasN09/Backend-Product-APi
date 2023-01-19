@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <title>Filter</title>
+</head>
+
+<body>
+    <h1 class="title">Welcome to Products details</h1>
+    <a class="homelink" href="/">Home</a>
+    <div class="box">
+        <form action="/product/filter/rating/<%= rating %>" method="get">
+            <!-- <h2>Products with Rating {<%= rating %>}</h2> -->
+            <% founds.forEach(function(found){ %>
+                <div class="boxshawdow">
+                    <h1 class="productname">Product Name:<%= found.name %>
+                    </h1>
+                    <h2 class="price">Price:₹<%= found.price %>
+                    </h2>
+                    <h3 class="featured">Featured:<%= found.featured %>
+                    </h3>
+                    <h3 class="rating">Rating:<%= found.rating %>
+                    </h3>
+                    <h3 class="date">Created On:<%= found.createdOn %>
+                    </h3>
+                    <h3 class="companyname">Company name:<%= found.company %>
+                    </h3>
+                    <a class="edit" href="/product/update/<%= found.productId %>">Edit</a>
+                    <br>
+                    <a class="delete" href="/product/delete/<%= found.productId %>">Delete</a>
+                </div>
+                <% }); %>
+        </form>
+
+    </div>
+</body>
+
+</html>

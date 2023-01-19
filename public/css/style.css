@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.title {
+    padding: 25px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.box {
+    /* margin-top: 3rem;
+    margin-left: 10rem; */
+    margin-top: 0rem;
+    margin: 0 12rem;
+    /* display:flexbox;
+    align-items: center;
+    justify-content: center; */
+
+}
+
+.boxshawdow {
+    margin-top: 2rem;
+    display: grid;
+    -webkit-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.75);
+    width: 75rem;
+    height: 10rem;
+    padding-left: 2rem;
+}
+
+.productname {
+    margin-top: 1rem;
+    position: relative;
+}
+
+.price {
+    font-size: 1.5rem;
+    display: inline;
+    position: absolute;
+    margin-top: 8rem;
+    margin-left: 25rem;
+}
+
+.rating {
+    margin-top: 8rem;
+    margin-left: 64rem;
+    display: inline;
+    position: absolute;
+}
+
+button {
+    position: absolute;
+    margin: 2%;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    bottom: 0;
+    right: 0;
+}
+
+button {
+    height: 80px;
+    width: 80px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.button-circle {
+    background-color: #6d50d8;
+    border-radius: 25px;
+}
+
+.createbutton{
+    position:fixed;
+	width:50px;
+	height:50px;
+	bottom:40px;
+	right:20px;
+}
+.plus {
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 900;
+    color: white;
+}
+
+.edit {
+    /* position: absolute; */
+    position: relative;
+    left: 70rem;
+    top: -6rem;
+    width: 3rem;
+    background-color: rgb(110, 20, 220);
+    border-radius: 5px;
+    color: white;
+    padding: .5em;
+    text-decoration: none;
+}
+
+.delete {
+    top: -6rem;
+    left: 70rem;
+    position: relative;
+    width: 3rem;
+    background-color: Crimson;  
+  border-radius: 5px;
+  color: white;
+  padding: .5em;
+  text-decoration: none;
+}
+
+.filter {
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+}
+
+.filterthings {
+    display: block;
+    position: absolute;
+    padding-left: 1rem;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.ratingbox {
+    margin-top: 2rem;
+}
+
+.form-group {
+    margin: 2%;
+}
+
+.updatebutton {
+    margin-left: 45rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.featuredbox{
+    margin-top: 2rem;
+}
+
+.homelink{
+    position: absolute;
+    right: 0;
+    margin-right: 3rem;
+    font-size: 1.5rem;
+}
+
+.deletemsg{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 5rem;
+}
+
+.cancel{
+    left:2.5rem;
+    position: relative;
+    top: 0rem;
+    width: 4.3rem;
+    background-color: rgb(110, 20, 220);
+    border-radius: 5px;
+    color: white;
+    padding: .5em;
+}

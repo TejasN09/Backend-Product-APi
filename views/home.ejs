@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <h1 class="title">Welcome to Products details</h1>
+    <div class="filterthings">
+        <h2 class="filter">Filter</h2>
+        <h3>Price</h3>
+        <a href="/product/filter/price/1000"><input type="checkbox" name="price" value="1000">₹0-1000 </input></a><br>
+        <a href="/product/filter/price/5000"><input type="checkbox" name="price" value="5000">₹1000-5000 </input></a><br>
+        <a href="/product/filter/price/5001"><input type="checkbox" name="price" value="5001">₹5000-100000 </input></a>
+
+        <h3 class="ratingbox">Rating</h3>
+        <a href="/product/filter/rating/5"><input type="checkbox" name="star" value="5">5 star </input></a><br>
+        <a href="/product/filter/rating/4"><input type="checkbox" name="star" value="4">4 star </input></a><br>
+        <a href="/product/filter/rating/3"><input type="checkbox" name="star" value="3">3 star </input></a><br>
+        <a href="/product/filter/rating/2"><input type="checkbox" name="star" value="2">2 star </input></a><br>
+        <a href="/product/filter/rating/1"><input type="checkbox" name="star" value="1">1 star </input></a>
+
+        <h3 class="featuredbox">Featured</h3>
+        <a href="/product/filter/bool/true"><input type="checkbox" name="bool" value="true">true</input></a><br>
+        <a href="/product/filter/bool/false"><input type="checkbox" name="bool" value="false">false</input></a>
+    </div>
+
+    <div class="box">
+        <% founds.forEach(function(found){ %>
+            <div class="boxshawdow">
+                <h1 class="productname">Product Name:<%= found.name %>
+                </h1>
+                <h2 class="price">Price:₹<%= found.price %>
+                </h2>
+                <h3 class="featured">Featured:<%= found.featured %>
+                </h3>
+                <h3 class="rating">Rating:<%= found.rating %>
+                </h3>
+                <h3 class="date">Created On:<%= found.createdOn %>
+                </h3>
+                <h3 class="companyname">Company name:<%= found.company %>
+                </h3>
+                <a class="edit" href="/product/update/<%= found.productId %>">Edit</a>
+                <br>
+                <a class="delete" href="/product/delete/<%= found.productId %>">Delete</a>
+            </div>
+            <% }); %>
+    </div>
+    <div class="createbutton">
+        <button class="button-circle"><a class="plus" href="/product/add">+</a></button>
+    </div>
+    <script>
+        valueChange = function (item) {
+            console.log(item.value);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <title>Delete</title>
+</head>
+
+<body>
+    <form action="/product/delete/<%= productId %>" method="post">
+        <div class="deletemsg">
+            <label style="font-size: 2rem; font-weight:bold;">Sure u wanna delete</label><br>
+            <input type="submit" name="Yes" class="btn btn-primary updatebutton">
+            <a class="cancel" href="/" style="text-decoration: none;">Cancel</a>
+        </div>
+    </form>
+</body>
